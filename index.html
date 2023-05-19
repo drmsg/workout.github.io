@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Workout Tracker</title>
+</head>
+<body>
+    <h1>Workout Tracker</h1>
+    <label>Select Body Part:
+        <select id="bodypart"></select>
+    </label>
+    <br>
+    <label>Select Exercise:
+        <select id="exercise"></select>
+    </label>
+    <br>
+    <label>Input Weight:
+        <input id="weight" type="number" placeholder="in kg">
+    </label>
+    <br>
+    <label>Input Reps:
+        <input id="reps" type="number" placeholder="Number of Repetitions">
+    </label>
+    <br>
+    <button onclick="addExercise()">Submit</button>
+
+    <h2>Exercise Log:</h2>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Body Part</th>
+                <th>Exercise</th>
+                <th>Weight</th>
+                <th>Reps</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+</body>
+<script src="app.js"></script>
+</html>
